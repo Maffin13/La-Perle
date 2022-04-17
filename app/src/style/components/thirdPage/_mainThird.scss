@@ -1,0 +1,100 @@
+.main {
+
+    &__menu {
+
+
+        &-imgages {
+            display: block;
+            width: 50%;
+        }
+
+        &-firstItem, &-secondItem, &-thirdItem{
+            display: flex;
+            align-items: center;
+        }
+
+        &-firstContent {
+            width: 50%;
+            margin-left: 50px;
+        }
+
+        &-firstTitle {
+            font-size: 48px;
+            line-height: 50px;
+            font-family: 'PlayfairDisplay-Regular';
+            padding-bottom: 30px;
+            text-align: center;
+        }
+
+        &-titleList {
+            font-size: 20px;
+            line-height: 24px;
+            font-family: 'PlayfairDisplay-Regular';
+            color: $black;
+            padding-bottom: 10px;
+        }
+        &-description{
+            font-size: 18px;
+            line-height: 24px;
+            font-family: 'PlayfairDisplay-Regular';
+            color: $black;  
+        }
+        &-list{
+            padding-bottom: 30px;
+            padding-left: 50px;
+        }
+        &-content{
+            direction: rtl;
+            overflow-y: scroll;
+            text-align: end;
+            max-height: 420px;
+        &::-webkit-scrollbar{
+                width:10px;
+                background: linear-gradient(90deg, #FFFFFF 40%, #C4C4C4 50%, #FFFFFF 40%);
+              }
+        &::-webkit-scrollbar-thumb{
+            background: #C4C4C4; 
+            border-radius: 0;
+          }
+        }
+    }
+}
+
+@media(max-width:1364px){
+    .main{
+        &__menu{
+            &-content{
+                max-height: 380px;
+            }
+        }
+    }
+}
+@media(max-width:1260px){
+    .main{
+        &__menu{
+            &-content{
+                max-height: 230px;
+            }
+            &-list{
+                padding-bottom: 10px;
+                padding-left: 10px;
+            }
+            &-description{
+                line-height: 18px;
+            }
+            &-titleList{
+                padding-bottom: 5px;
+            }
+            &-secondItem, &-firstItem, &-thirdItem{
+                flex-direction: column;
+            }
+            &-firstContent{
+                margin: 30px 0;
+                width: 100%;
+            }
+            &-imgages{
+                width: 100%;
+            }
+        }
+    }
+}

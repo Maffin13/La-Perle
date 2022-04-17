@@ -1,0 +1,108 @@
+.footer {
+
+
+    &__content {
+        display: flex;
+
+        &-info {
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+            background: $white;
+           
+        }
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            padding-top: 75px;
+            padding-right: 20px;
+        }
+        &-items{
+            display: flex;
+        }
+
+        &-icons {
+            padding-bottom: 25px;
+        }
+
+        &-description {
+            max-width: 199px;
+            width: 100%;
+            font-size: 16px;
+            line-height: 20px;
+            color: $black;
+            font-family: 'PlayfairDisplay-Regular';
+        }
+
+        &-title {
+            color: $black;
+            font-size: 20px;
+            line-height: 25px;
+            font-family: 'PlayfairDisplay-Regular';
+            padding-bottom: 20px;
+        }
+
+        &-logo {
+            padding: 50px;
+        }
+
+        &-tel {
+            font-size: 16px;
+            line-height: 20px;
+            color: $black;
+            font-family: 'PlayfairDisplay-Regular';
+            padding-top: 10px;
+        }
+
+        &-right {
+            margin-left: auto;
+        }
+    }
+}
+@media(max-width:1310px){
+    .footer{
+        &__content{
+            display: initial;
+
+            &-info{
+                width: 100%;
+            }
+        }
+        &__map{
+            width: 100%;
+        }
+    }
+}
+@media(max-width:674px){
+    .footer{
+        &__content{
+            &-logo{
+                padding: 30px;
+                margin-left: 150px;
+            }
+            &-info{
+                display: initial;
+            }
+            &-items{
+                justify-content: space-evenly;
+            }
+            &-description{
+                max-width: 120px;
+            }
+        }
+    }
+}
+@media(max-width:480px){
+    .footer{
+        &__content{
+            &-logo{
+                padding: 30px;
+                margin-left: 50px;
+            }
+            &-items{
+                margin-left: 10px;
+            }
+        }
+    }
+}

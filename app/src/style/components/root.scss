@@ -1,0 +1,41 @@
+$white: #ffffff;
+$black: #000000;
+$greyLight: #838383;
+$fonts: ('PlayfairDisplay-Italic', 500),
+        ('PlayfairDisplay-Regular', 400),
+        ('times-new-roman', 400);
+
+@each $name, $weight in $fonts {
+    @font-face {
+        font-family: $name;
+        src: url('../fonts/#{$name}.woff');
+        font-weight: $weight; 
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    max-width: 1825px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+
+::-webkit-scrollbar{
+    width: 15px;
+    background:  #F4EFEC;
+  }
+  ::-webkit-scrollbar-thumb{
+    background: #ce8f11;
+    border-radius: 15px;
+  }
+
